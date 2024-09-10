@@ -24,3 +24,7 @@ body {
   scrollbar-width: none;
   /* Firefox */
 }
+
+* {
+  line-height: normal;
+}
