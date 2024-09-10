@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-theme="emerald">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="stylesheet" href="styles.css">
+    <script> 
+      $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html");
+      });
+    </script> 
+  </head>
+  <body>
+    
+    <div class="drawer">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        <div id="header"></div>
+        <div class="hero h-screen" style="background-image: url(https://3xn.com/wp-content/uploads/2017/06/Big-image_07_083_Royal_Arena_245_XH.jpg);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center min-h-xl">
+            <div class="min-w-xl">
+              <h1 class="text-3xl font-bold">Welcome to the</h1>
+              <h1 class="text-8xl font-bold h-36 my-1">ARENA OF CHAMPIONS</h1>
+              <button class="btn btn-primary text-xl">Explore</button>
+            </div>
+          </div>
+        </div>
+        <div class="divider text-5xl italic font-bold h-20">EXPLORE EVENTS</div>
+        <div class="card lg:card-side bg-base-200 m-5 shadow-2xl">
+          <figure>
+            <img
+              src="https://precisionflooringservices.com/wp-content/uploads/2024/02/Precision-Flooring-Services_PhotOleh.jpg"
+              alt="Movie"
+              style="width:500px;height:220px;"/>
+          </figure>
+          <div class="card-body">
+            <div class="flex justify-between items-center w-full">
+              <h2 class="card-title text-6xl">Gameday</h2>
+              <h2 class="card-title text-3xl">10/12/24</h2>
+            </div>
+            <h2 class="card-title text-2xl">Midland Secondary School <i>vs.</i> Northumberland Park High</i></h2>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Watch</button>
+            </div>
+          </div>
+        </div>
+        <div id="footer"></div>
+      </div>
+      <div class="drawer-side">
+        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+          <label for="my-drawer" class="btn btn-square btn-ghost mx-2">
+            <span class="material-symbols-outlined">close</span>
+          </label>
+          <li><a class="text-xl shadow-md font-bold bg-base-100 mb-2">Events</a></li>
+          <li><a class="text-xl shadow-md font-bold bg-base-100 mb-2">Calendar</a></li>
+          <li><a class="text-xl shadow-md font-bold bg-base-100 mb-2">Visit Information</a></li>
+          <div class="divider"></div>
+          <li><a class="text-xl text-white shadow-md font-bold bg-secondary mb-2">Tickets</a></li>
+          <li><a class="text-xl text-white shadow-md font-bold bg-accent mb-2">Booking</a></li>
+          <br>
+          <li><a class="text-lg font-bold">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
